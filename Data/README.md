@@ -1,12 +1,11 @@
 #Data Format:
 
 {
-  'title',
-  'sents':     [
-                  [word in sent 0],
-                  [word in sent 1]
+  'tweetId',
+  'tweet':     [
+                  tweet String
                ]
-  'vertexSet': [
+  'entities': [
                   [
                     { 'name': mention_name, 
                       'sent_id': mention in which sentence, 
