@@ -12,7 +12,7 @@
                       end_position, 
                       entity_type
                   ], 
-                  [anthoer entity]
+                  [another entity]
                 ]
   'relations':   [
                     [
