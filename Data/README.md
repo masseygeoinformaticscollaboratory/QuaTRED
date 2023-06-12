@@ -1,26 +1,28 @@
-#Data Format:
+# Data Format:
 
+```
 {
-  'tweetId',
+  'tweetId':, tweet ID
   'tweet':     [
                   tweet String
-               ]
+               ],
   'entities': [
                   [
-                    { 'name': mention_name, 
-                      'sent_id': mention in which sentence, 
-                      'pos': postion of mention in a sentence, 
-                      'type': NER_type}
-                    {anthor mention}
+                      start_position, 
+                      end_position, 
+                      entity_type
                   ], 
                   [anthoer entity]
                 ]
-  'labels':   [
-                {
-                  'h': idx of head entity in vertexSet,
-                  't': idx of tail entity in vertexSet,
-                  'r': relation,
-                  'evidence': evidence sentences' id
-                }
-              ]
+  'relations':   [
+                    [
+                      start_position_of_head_entity, 
+                      end_position_of_head_entity, 
+                      start_position_of_tail_entity, 
+                      end_position_of_tail_entity,
+                      relation_type
+                    ],
+                    [another relation]
+                ]
 }
+```
